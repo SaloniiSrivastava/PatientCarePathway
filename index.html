@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+
+    <title>HTML Developer Assessmet-Saloni Srivastava</title>
+
+</head>
+
+<body>
+    <div class="top">
+        <h2>Chronic Heart Failure-</h2>
+        <h1 class="topHeading">Patient Care Pathway</h1>
+    </div>
+    <div class="border">
+        <div class="section">
+            <img src="Chest.svg" class="chest" alt="image">
+            <div class="topDiv">
+            <div class="box box1">
+                <h1 class="heading">PATIENT WITH SUSPECTED HF</h1>
+                <div class="section">
+                    <div class="value">
+                        <img src="Tick.svg">
+                        <p>Shows typical signs and symptoms - breathlessness, fatigue, and ankle swelling</p>
+                    </div>
+                    <div class="value">
+                        <img src="Tick.svg">
+                        <p>Presence of risk factors</p>
+                    </div>
+                    <div class="value">
+                        <img src="Tick.svg">
+                        <p>Abnormal ECG</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- section 1 -->
+    <div class="border2">
+        <div class="heading">
+            <img src="one.svg">
+            <h1 >INITIAL DIAGNOSTIC TESTS</h1>
+        </div>
+        <div class="section">
+            <div class="box">
+                <p> BNP <35 pg/mL Or NT-proBNP <125 pg/mL Or MR-proANP <40 pmol/L </p>
+                        <ul>
+                            <li>HF unlikely <img src="Cross.svg"></li>
+                            <li>Consider other diagnoses</li>
+                        </ul>
+                        <button data-popup-target="#popup1" class="firstPopup" id="firstPopup"
+                            onclick="openPopupOne()">Want to know more? +</button>
+            </div>
+            <div class="box box3">
+                <p> NT-proBNP ≥ 125 pg/mL Or BNP ≥ 35 pg/mL</p>
+                <ul>
+                    <li> May be HF <img src="GreenTick.svg"></li>
+                    <li>Proceed to echocardiography</li>
+                </ul>
+                <button onclick="openPopupTwo()">Want to know more? +</button>
+            </div>
+
+            <img src="TestTube.svg" class="testTube">
+        </div>
+    </div>
+    <!------------------------------------------section 2 ---------------------------------------- -->
+    <div >
+        <div class="section2">
+            <img src="Monitor.svg" class="monitor">
+            <div class="topDivEc">
+            <div class="sec">
+                <div class="heading">
+                    <img src="two.svg">
+                    <h1>ECHOCARDIOGRAPHY</h1>
+                    
+                </div>
+                
+                <div class="echoSection">
+                    <div class="box box4">
+                        <p>If normal echocardiography </p>
+                        <ul>
+                            <li> HF unlikely <img src="Cross.svg"> </li>
+                            <li> Consider other diagnoses </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <button class="btn" onclick="openPopupThree()">Want to know more? +</button>
+                        <div class="box box5">
+                            
+                            <p> If abnormal echocardiography</p>
+                            <ul>
+                                <li> HF is confirmed <img src="GreenTick.svg"></li>
+                                <li> Define HF phenotype</li>
+                            </ul>
+                        </div>
+                        <img src="Polygon 2.svg" class="poly">
+                        <div class="box2">LVEF</div>
+                        <div class="box table box5">
+                            <div>
+                                <p>≤40%</p>
+                                <img src="Polygon 2.svg" class="poly">
+                                <p>HFrEF</p>
+                            </div>
+                            <div>
+                                <p>41-49%</p>
+                                <img src="Polygon 2.svg" class="poly">
+                                <p>HFrEF</p>
+                            </div>
+                            <div>
+                                <p>≥50%</p>
+                                <img src="Polygon 2.svg" class="poly">
+                                <p>HFrEF</p>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---------------------------------------- section 3--------------------->
+    <div class="border3">
+        <div class="heading heading2">
+            <img src="three.svg">
+            <h1>TREATMENT</h1>
+        </div>
+        <div class="section secTreat">
+
+            <div>
+                <div class="box tableTwo">
+                    <div>
+                        <p>HFrEF</p>
+                        <img src="Polygon 2.svg" class="poly2">
+                    </div>
+                    <div>
+                        <p>HFrEF</p>
+                        <img src="Polygon 2.svg" class="poly2">
+                    </div>
+                    <div>
+                        <p>HFrEF</p>
+                        <img src="Polygon 2.svg" class="poly2">
+                    </div>
+                </div>
+                <div class="box2 blueBox">Guideline Recommended Pharmacological Treatment</div>
+                <button onclick="openPopupFour()">Want to know more? +</button>
+            </div>
+            <img src="Medicine.svg" class="medicine">
+        </div>
+    </div>
+
+    <!-- popup section  -->
+
+    <div class="popup" id="popup1">
+        <div>
+            <button data-popup-close class="cross" onclick="closePopupOne()">&times;</button>
+        </div>
+        <ul>
+            <li>Plasma concentrations of NPs are recommended as initial diagnostic tests in patients with signs and
+                symptoms
+                suggestive of HF to rule out the diagnosis.</li>
+            <li>Class I recommendation (recommended or indicated) for use of NPs in diagnosis of chronic HF.</li>
+            <li>Elevated NP concentrations support a diagnosis of HF, are useful for prognostication, and may guide
+                further
+                cardiac investigation.</li>
+        </ul>
+    </div>
+
+    <div class="popup" id="popup2">
+        <div>
+            <button data-popup-close class="cross" onclick="closePopupTwo()">&times;</button>
+        </div>
+        <ul>
+            <li>Alternative causes of an elevated NP can include AF, increasing age, and acute or chronic kidney
+                disease.
+            </li>
+            <li>NP can be disproportionately low in obese patients.</li>
+        </ul>
+    </div>
+    <div class="popup" id="popup3">
+        <div>
+            <button data-popup-close class="cross" onclick="closePopupThree()">&times;</button>
+        </div>
+        <p><b>ECHOCARDIOGRAPHY should be conducted if:</b></p>
+        <ul>
+            <li>Elevated NPs concentrations</li>
+            <li>or HF strongly suspected</li>
+            <li>or NT-proBNP/BNP unavailable </li>
+        </ul>
+    </div>
+    <div class="popup popup4" id="popup4">
+        <div>
+            <button data-popup-close class="cross" onclick="closePopupFour()">&times;</button>
+        </div>
+        <div class="popup4">
+            <div class="borderSml">
+                <p><b>Treatment for HFrEF and NYHA class II symptoms or worse:</b></p>
+                <ul>
+                    <li>Angiotensin receptor neprilysin inhibitor (ARNI) as a replacement for angiotensin-converting
+                        enzyme (ACE) inhibitors - Class I recommendations.</li>
+                    <li> Addition of SGLT-2 inhibitors (dapagliflozin or empagliflozin) - Class I recommendations.</li>
+                </ul>
+            </div>
+
+            <div class="borderSml">
+                <p><b>Treatment for HFmrEF</b></p>
+                <ul>
+                    <li> Diuretics to relieve congestion..</li>
+                    <li>  ACE inhibitors/angiotensin-receptor blockers/ARNIs/beta-blockers/mineralocorticoid receptor antagonists may be considered as additional therapy to reduce mortality and hospitalization (Class IIa recommendation).</li>
+                </ul>
+            </div>
+
+            <div>
+                <p><b>Treatment for HFpEF                   
+                    </b></p>
+                <ul>
+                    <li> Diagnosis and treatment of contributing factors (hypertension, kidney disease, etc.).
+                        Use of diuretics.</li>
+                    <li> Evidence based therapies proven with reducing the major heart failure outcomes.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="" id="overlay"></div>
+
+    <script>
+        const overlay = document.getElementById('overlay');
+        const popup = document.getElementById('popup1');
+        const popup2 = document.getElementById('popup2');
+        const popup3 = document.getElementById('popup3');
+        const popup4 = document.getElementById('popup4');
+
+        function openPopupOne() {
+            popup.classList.add('active');
+            overlay.classList.add('active');
+        }
+        function closePopupOne() {
+            popup.classList.remove('active');
+            overlay.classList.remove('active');
+        }
+        function openPopupTwo() {
+            popup2.classList.add('active');
+            overlay.classList.add('active');
+        }
+        function closePopupTwo() {
+            popup2.classList.remove('active');
+            overlay.classList.remove('active');
+        }
+        function openPopupThree() {
+            popup3.classList.add('active');
+            overlay.classList.add('active');
+        }
+        function closePopupThree() {
+            popup3.classList.remove('active');
+            overlay.classList.remove('active');
+        }
+        function openPopupFour() {
+            popup4.classList.add('active');
+            overlay.classList.add('active');
+        }
+        function closePopupFour() {
+            popup4.classList.remove('active');
+            overlay.classList.remove('active');
+        }
+
+    </script>
+</body>
+
+</html>

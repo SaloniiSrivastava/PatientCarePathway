@@ -1,0 +1,265 @@
+.body{
+    font-size: 14px;
+    margin:0;
+    padding:0;
+}
+.top{
+    background-color: #D1325D;
+    border-radius:5px;
+   
+}
+h2{
+    color: #FFB3CB;
+     margin-left: 1%;  
+     
+}
+.topHeading{
+    font-family: 'manrope';
+    color: white;
+     margin-left: 1%;  
+    font-weight: 400px;
+    font-size: 32px;
+    
+}
+.box{
+    background-color:  #E8F0FF;
+    border-radius: 5px;
+    padding:0.5% 1%; 
+     /* justify-content: space-between; */
+     margin: 1% 0%;
+     min-width: 35%;
+     
+}
+.box1{
+    min-width: 96%;
+    margin: 1% 6%;
+}
+
+.box2{
+    background-color:   #AAC7FF;
+    border-radius: 5px;
+    padding:0.5% 1%; 
+    /* justify-content: space-between; */
+   text-align: center;
+   font-weight: bold;
+   width: 300%;
+   
+}
+.box3{
+    margin: 1% 4%;
+}
+.box4{
+    margin: 1% 6%;
+    width: 50%;
+}
+.box5{
+    min-width: 300%;
+    
+}
+.heading{
+    color: #D1325D;
+    font-family: 'manrope';
+     width: max-content;  
+    display: flex;
+    
+    
+    
+}
+.section,.value{
+    display: flex;
+  
+    
+}
+.chest{
+    margin-right: 5%;
+    position:absolute;
+    top:15%;
+   left:1;
+}
+.value p{
+    margin-left: 5%;
+}
+button{
+    background-color: #D1325D;
+    border: none;
+    color:#E8F0FF;
+     padding:10px; 
+    border-radius: 5px;
+}
+button:hover{
+    cursor: pointer;
+
+}
+.table{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+.table div{
+    margin-right: 2%;
+}
+.echoSection{
+    display: flex;
+}
+.poly{
+    margin-left: 150%;
+}
+.section2{
+    display: flex;
+   
+}
+.btn{
+    padding: auto;
+    /* height: 40px; */
+    margin-left: 5%;
+    margin-top: 5%;
+    /* width: 100%; */
+    text-align: center;
+}
+.table p{
+ font-weight: bold;
+ text-align: center;
+}
+.popup{
+    background-color:#FFEBF0;    
+    padding: 2%;
+    border-radius: 5px;
+    position: fixed;
+    top:50%;
+   left:50%;
+    transform:translate(-50%,-50%) scale(0);
+    transition: 200ms ease-in-out;
+    box-shadow: 0px 0px 10px 10px  #c0124069;
+    border-radius: 5px;
+    z-index:10;
+     width:500px; 
+    max-width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+.popup.active{
+    transform:translate(-50%,-50%) scale(1);
+}
+.cross{
+   float:right;
+   margin: 0%;
+}
+#overlay{
+    position: fixed;
+     opacity: 0; 
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color: rgba(0, 0, 0, 0.79);
+    transition: 200ms ease-in-out;
+    pointer-events: none;
+}
+#overlay.active{
+    pointer-events: all;
+    opacity: 1;
+}
+/* .border{
+    border-left: 5px solid #FFB3CB;
+    border-bottom: 5px solid #FFB3CB;
+    border-radius: 10px;
+    border-top-left-radius: 0;
+   border-bottom-right-radius:0 ;
+   width: 99%;
+    border-block-start: #E8F0FF;
+} */
+.border2{
+    border-right: 5px solid #FFB3CB;
+    border-bottom: 5px solid #FFB3CB;
+    border-radius: 20px;
+   border-bottom-left-radius: 0;
+    margin-left: 4.5%;
+    width: 92%;
+}
+.border3{
+    border-right: 5px solid #FFB3CB;
+    border-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 0;
+    max-width: 96%;
+}
+.border4{
+    border-left: 5px solid #FFB3CB;
+    border-bottom: 5px solid #FFB3CB;
+    border-radius: 10px;
+   border-bottom-right-radius:0 ;
+   width: 99%;
+    border-block-start: #E8F0FF;
+}
+.popup4{
+    display: flex;
+    width: 1000px;
+    max-width: 90%;
+}
+.borderSml{
+   border-right:1px solid #FFB3CB;
+   margin-right: 2%;
+}
+
+.topDiv{
+    
+    width: 92%;
+    margin-left: 4%;
+    border-left: 5px solid #FFB3CB;
+    border-bottom: 5px solid #FFB3CB;
+    border-radius: 10px;
+    border-top-left-radius: 0;
+   border-bottom-right-radius:0 ;
+    border-block-start: #E8F0FF;
+}
+.topDivEc{
+    
+    width: 90%;
+    margin-left: 4%;
+    border-left: 5px solid #FFB3CB;
+    border-bottom: 5px solid #FFB3CB;
+    border-radius: 10px;
+    border-top-left-radius: 15px;
+   border-bottom-right-radius:0 ;
+   
+    border-block-start: #E8F0FF;
+    padding-left: 1%;
+}
+.testTube{
+    margin-left: 86%;
+    position:absolute;
+    top:47%;
+   
+}
+.monitor{
+    margin-right: 5%;
+    position:absolute;
+    top:86%;
+    left:1;
+}
+.echoSecTwo{
+    width: 100%;
+}
+.medicine{
+    margin-left: 86%;
+    position:absolute;
+    top:125%;
+}
+
+.heading2,.secTreat{
+    margin-left: 4%;
+}
+.tableTwo{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 370%;
+
+}
+.blueBox{
+    width: 370%;
+}
+.poly2{
+    margin-left: 35%;
+}
