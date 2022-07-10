@@ -31,7 +31,7 @@ h2{
      
 }
 .box1{
-    min-width: 96%;
+    min-width: 92%;
     margin: 1% 10%;
 }
 
@@ -42,18 +42,20 @@ h2{
     /* justify-content: space-between; */
    text-align: center;
    font-weight: bold;
-   width: 300%;
+   width: 230%;
    
 }
 .box3{
     margin: 1% 4%;
 }
 .box4{
-    margin: 1% 6%;
+    margin-left:9%;
+    margin-right: 4%;
     width: 50%;
 }
 .box5{
-    min-width: 300%;
+    min-width: 230%;
+    margin-bottom: 1%;
     
 }
 .heading{
@@ -73,7 +75,7 @@ h2{
 .chest{
     margin-right: 5%;
     position:absolute;
-    top:15%;
+    top:18%;
    left:1;
 }
 .value p{
@@ -103,7 +105,7 @@ button:hover{
     display: flex;
 }
 .poly{
-    margin-left: 150%;
+    margin-left: 100%;
 }
 .section2{
     display: flex;
@@ -112,8 +114,8 @@ button:hover{
 .btn{
     padding: auto;
     /* height: 40px; */
-    margin-left: 5%;
-    margin-top: 5%;
+    margin-left: 2%;
+    margin-top: 0%;
     /* width: 100%; */
     text-align: center;
 }
@@ -227,15 +229,15 @@ button:hover{
     padding-left: 1%;
 }
 .testTube{
-    margin-left: 86%;
+    margin-left: 84%;
     position:absolute;
-    top:47%;
+    top:56%;
    
 }
 .monitor{
     margin-right: 5%;
     position:absolute;
-    top:86%;
+    top:110%;
     left:1;
 }
 .echoSecTwo{
@@ -244,7 +246,7 @@ button:hover{
 .medicine{
     margin-left: 86%;
     position:absolute;
-    top:125%;
+    top:157%;
 }
 
 .heading2,.secTreat{
@@ -254,11 +256,12 @@ button:hover{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    width: 370%;
+    width: 300%;
 
 }
 .blueBox{
-    width: 370%;
+    width: 300%;
+    margin-bottom: 2%;
 }
 .poly2{
     margin-left: 35%;
